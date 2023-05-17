@@ -1,27 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+	cursor: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Cursor */
+
+.cursor-d {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	/* position: absolute; */
+	width: 20px;
+	height: 20px;
+	/* background: #F1796C; */
+	border: 5px solid #f1796c;
+	border-radius: 50%;
+	z-index: 9999999999999;
+	pointer-events: none;
+	transition-duration: 0ms;
+	transition-timing-function: ease-out;
+	animation: cursorAnim 0.5s infinite alternate;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.cursor {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	/* position: absolute; */
+	width: 40px;
+	height: 40px;
+	border: 2px solid #e6e6e6;
+	border-radius: 50%;
+	z-index: 10000000;
+	pointer-events: none;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+	animation: cursorAnim 0.5s infinite alternate;
+	transition: left none;
+}
+
+.cursor::after {
+	content: "";
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	border: 14px solid #74748d;
+	border-radius: 50%;
+	opacity: 0.5;
+	top: -2px;
+	left: -2px;
+	animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0.7);
+	}
+}
+
+@keyframes cursorAnim2 {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0.4);
+	}
+}
+
+@keyframes cursorAnim3 {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+.expand {
+	animation: cursorAnim3 0.5s forwards;
+	border: 1px solid #f1796c;
 }
