@@ -34,7 +34,7 @@ export default function Home() {
 					</div> */}
 				</div>
 			</div>
-			<div className="bg-background-light min-h-[200vh]">
+			<div className="bg-background-light min-h-[40vh]">
 				<div className="max-w-6xl mx-auto px-5 sm:px-12">
 					<h1 className="text-center md:text-left scale-100 font-serif text-4xl tracking-wide leading-snug uppercase">
 						Top <span className="text-primary-light">Rated</span> <br />{" "}
@@ -81,6 +81,48 @@ export default function Home() {
 									className="w-full min-w-[340px] max-w-md z-[1] relative rounded-t-full"
 								/>
 							</div>
+						</div>
+					</div>
+				</div>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1440 320"
+					className="fill-slate-900"
+				>
+					<path
+						fill-opacity="1"
+						d="M0,128L30,144C60,160,120,192,180,186.7C240,181,300,139,360,144C420,149,480,203,540,218.7C600,235,660,213,720,208C780,203,840,213,900,224C960,235,1020,245,1080,261.3C1140,277,1200,299,1260,282.7C1320,267,1380,213,1410,186.7L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+					></path>
+				</svg>
+			</div>
+			<div className="bg-gradient-to-b from-slate-900 to-background-light min-h-[40vh] pb-10">
+				<div className="max-w-6xl mx-auto px-5 sm:px-12 py-8">
+					<div className="flex flex-col-reverse sm:flex-row justify-between gap-4">
+						<div className="flex-1"></div>
+						<div className="flex-1 flex flex-col items-center sm:items-end justify-start">
+							<h1 className="text-center md:text-right scale-100 font-serif text-4xl tracking-wide leading-snug uppercase">
+								<span className="text-7xl font-medium">
+									O<span className="text-primary-light">UR</span> <br />{" "}
+								</span>
+								ASCEND
+								<span className="text-primary-light">ANCE</span>
+							</h1>
+							<p className="text-sm mt-6 text-justify w-full sm:max-w-lg">
+								<b className="text-primary-light">JCX Developments Ltd</b>{" "}
+								embarked on the Real Estate journey with the commitment to bring
+								contemporary design and develop large-scale{" "}
+								<b className="text-primary-light">Residential</b>,{" "}
+								<b className="text-primary-light">Commercial</b>, and{" "}
+								<b className="text-primary-light">Condominium</b> projects in
+								Bangladesh with Japanese collaboration and experience.
+							</p>
+							<p className="text-sm mt-3 text-justify w-full sm:max-w-lg">
+								We will strive to deliver precise, exquisite solutions to our
+								client&apos;s wishes and requirements so that their aspirations
+								become a reality. This will be accomplished by introducing
+								state-of-the-art innovative Japanese technologies with the
+								partnership with Creed Group from Japan.
+							</p>
 						</div>
 					</div>
 				</div>

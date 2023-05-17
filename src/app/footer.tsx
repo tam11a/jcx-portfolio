@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
 	return (
-		<div className="min-h-[35vh] bg-background flex flex-col items-center justify-end w-full text-slate-400 p-5">
+		<div className="min-h-[35vh] bg-background-light flex flex-col items-center justify-end w-full text-slate-400 p-5">
 			{/* <div className="flex-1 w-full flex flex-col items-center justify-center text-xs tracking-widest gap-4 pt-5 pb-10">
 				<Link
 					href="/about"
