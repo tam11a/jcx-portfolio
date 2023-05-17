@@ -18,7 +18,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className="bg-background overflow-x-hidden"
+				className="bg-background max-w-[100vw] overflow-x-hidden"
 				suppressHydrationWarning
 			>
 				<Navbar />

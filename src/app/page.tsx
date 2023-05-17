@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
 	return (
-		<main className="bg-background text-slate-300">
+		<main className="bg-background text-slate-300 max-w-[100vw] overflow-x-hidden">
 			{/* Hero Section */}
 			<div className="mx-auto bg-[url(/bg.jpg)] object-cover bg-center">
 				<div className="min-h-[89vh] w-full bg-gradient-to-b from-transparent to-background-light to-70% flex flex-col items-center justify-center py-5">
@@ -40,7 +40,7 @@ export default function Home() {
 				<div className="max-w-6xl mx-auto px-5 sm:px-12">
 					<h1
 						className="text-center md:text-left scale-100 font-serif text-4xl tracking-wide leading-snug uppercase"
-						data-aos="fade-up"
+						// data-aos="fade-up"
 					>
 						Top <span className="text-primary-light">Rated</span> <br />{" "}
 						<span className="text-5xl font-medium">
@@ -78,7 +78,7 @@ export default function Home() {
 						</div>
 						<div
 							className="flex-1 flex flex-row justify-center md:justify-end"
-							data-aos="fade-left"
+							// data-aos="fade-left"
 						>
 							<div className=" w-fit h-fit border-4 border-slate-600 hover:border-slate-200 transition-colors duration-300 p-3 rounded-t-full mt-10 md:-mt-[40%]">
 								<Image
