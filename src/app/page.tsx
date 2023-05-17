@@ -8,7 +8,7 @@ export default function Home() {
 		<main className="bg-background text-slate-300">
 			{/* Hero Section */}
 			<div className="mx-auto bg-[url(/bg.jpg)] object-cover bg-center">
-				<div className="min-h-[75vh] w-full bg-gradient-to-b from-transparent to-background-light to-70% flex flex-col items-center justify-center py-5">
+				<div className="min-h-[89vh] w-full bg-gradient-to-b from-transparent to-background-light to-70% flex flex-col items-center justify-center py-5">
 					<div className="flex flex-col items-center">
 						<p className="text-2xl font-bold font-serif text-center text-slate-300 mb-1">
 							DISCOVER
