@@ -11,7 +11,7 @@ const Menu: React.FC<{ open?: boolean; onClose?: () => void }> = ({
 			<div
 				className={`fixed z-[100] top-0 left-0 ${
 					open ? "" : "-translate-x-[100vw] sm:-translate-x-[70vw]"
-				} w-screen sm:w-[70vw] h-screen bg-background-light text-slate-200 transition-transform duration-500 overflow-y-auto`}
+				} w-screen sm:w-[70vw] h-screen bg-background-light text-slate-200 transition-transform duration-500 pb-11 overflow-y-auto`}
 			>
 				<div className="flex flex-col items-start gap-4 text-3xl sm:text-4xl font-serif [&>a>span]:text-primary-light [&>a]:opacity-60 [&>a:hover]:opacity-100 [&>a:hover]:pl-4 [&>a]:transition-all [&>a]:duration-200 mt-40 ml-24 uppercase ">
 					<Link href="/">
