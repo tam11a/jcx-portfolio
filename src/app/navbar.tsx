@@ -62,8 +62,8 @@ const Navbar: React.FC = () => {
 
 	return (
 		<>
-			<div className="cursor"></div>
-			<div className="cursor-d"></div>
+			<div className="cursor hidden"></div>
+			<div className="cursor-d hidden"></div>
 			<nav className="fixed top-0 left-0 w-full z-10 bg-background backdrop-filter backdrop-blur-md border-b border-slate-900 bg-opacity-30">
 				<div className="max-w-6xl mx-auto px-5 sm:px-12 py-5">
 					<div className="flex items-center justify-between text-slate-400 text-xs tracking-widest font-semibold gap-x-4">
