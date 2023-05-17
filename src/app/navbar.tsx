@@ -33,6 +33,13 @@ const Navbar: React.FC = () => {
 		});
 	});
 
+	React.useEffect(() => {
+		// Hide scrollability when menu is open
+		if (menu)
+			document?.querySelector("body")?.classList.add("overflow-y-hidden");
+		else document?.querySelector("body")?.classList.remove("overflow-y-hidden");
+	}, [menu]);
+
 	return (
 		<>
 			<div className="cursor"></div>
