@@ -13,6 +13,21 @@ const Navbar: React.FC = () => {
 	React.useEffect(() => {
 		const cursor: HTMLDivElement | null = document.querySelector(".cursor");
 		const cursord: HTMLDivElement | null = document.querySelector(".cursor-d");
+		if (
+			navigator.userAgent.match(/Android/i) ||
+			navigator.userAgent.match(/webOS/i) ||
+			navigator.userAgent.match(/iPhone/i) ||
+			navigator.userAgent.match(/iPad/i) ||
+			navigator.userAgent.match(/iPod/i) ||
+			navigator.userAgent.match(/BlackBerry/i) ||
+			navigator.userAgent.match(/Windows Phone/i)
+		) {
+			cursor?.classList.add("hidden");
+			cursord?.classList.add("hidden");
+		} else {
+			cursor?.classList.remove("hidden");
+			cursord?.classList.remove("hidden");
+		}
 
 		document.addEventListener("mousemove", (e) => {
 			cursor?.setAttribute(
