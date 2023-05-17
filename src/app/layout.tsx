@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import "./globals.css";
+import "aos/dist/aos.css";
 import Navbar from "./navbar";
 import Footer from "./footer";
 

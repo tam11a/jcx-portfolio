@@ -6,6 +6,7 @@ import Logo from "../../public/logo.svg";
 import { Icon } from "@iconify/react";
 import Menu from "./menu";
 import { useToggle } from "@tam11a/react-use-hooks";
+import AOS from "aos";
 
 const Navbar: React.FC = () => {
 	const { state: menu, toggleState: toggleMenu } = useToggle(false);
@@ -39,6 +40,10 @@ const Navbar: React.FC = () => {
 			document?.querySelector("body")?.classList.add("overflow-y-hidden");
 		else document?.querySelector("body")?.classList.remove("overflow-y-hidden");
 	}, [menu]);
+
+	React.useEffect(() => {
+		AOS.init();
+	}, []);
 
 	return (
 		<>

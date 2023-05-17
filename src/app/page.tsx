@@ -1,6 +1,5 @@
 "use client";
 
-import { Icon } from "@iconify/react";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,7 +8,10 @@ export default function Home() {
 			{/* Hero Section */}
 			<div className="mx-auto bg-[url(/bg.jpg)] object-cover bg-center">
 				<div className="min-h-[89vh] w-full bg-gradient-to-b from-transparent to-background-light to-70% flex flex-col items-center justify-center py-5">
-					<div className="flex flex-col items-center">
+					<div
+						className="flex flex-col items-center"
+						data-aos="fade-in"
+					>
 						<p className="text-2xl font-bold font-serif text-center text-slate-300 mb-1">
 							DISCOVER
 						</p>
@@ -36,14 +38,20 @@ export default function Home() {
 			</div>
 			<div className="bg-background-light min-h-[40vh]">
 				<div className="max-w-6xl mx-auto px-5 sm:px-12">
-					<h1 className="text-center md:text-left scale-100 font-serif text-4xl tracking-wide leading-snug uppercase">
+					<h1
+						className="text-center md:text-left scale-100 font-serif text-4xl tracking-wide leading-snug uppercase"
+						data-aos="fade-up"
+					>
 						Top <span className="text-primary-light">Rated</span> <br />{" "}
 						<span className="text-5xl font-medium">
 							Wo<span className="text-primary-light">rks</span>
 						</span>
 					</h1>
 					<div className="flex flex-col-reverse gap-6 md:flex-row justify-between flex-1">
-						<div className="py-4 px-3 md:max-w-md flex flex-col gap-2">
+						<div
+							className="py-4 px-3 md:max-w-md flex flex-col gap-2"
+							data-aos="fade-right"
+						>
 							<h4 className="font-bold text-xl">MM Villa</h4>
 							<p className="text-xs font-semibold">Basundhara R/A, Dhaka</p>
 							<p className="text-xs font-semibold">1500 Sq. Ft.</p>
@@ -68,7 +76,10 @@ export default function Home() {
 								</button>
 							</div>
 						</div>
-						<div className="flex-1 flex flex-row justify-center md:justify-end">
+						<div
+							className="flex-1 flex flex-row justify-center md:justify-end"
+							data-aos="fade-left"
+						>
 							<div className=" w-fit h-fit border-4 border-slate-600 hover:border-slate-200 transition-colors duration-300 p-3 rounded-t-full mt-10 md:-mt-[40%]">
 								<Image
 									src={
@@ -100,14 +111,20 @@ export default function Home() {
 					<div className="flex flex-col-reverse sm:flex-row justify-between gap-4">
 						<div className="flex-1"></div>
 						<div className="flex-1 flex flex-col items-center sm:items-end justify-start">
-							<h1 className="text-center md:text-right scale-100 font-serif text-4xl tracking-wide leading-snug uppercase">
+							<h1
+								className="text-center md:text-right scale-100 font-serif text-4xl tracking-wide leading-snug uppercase"
+								data-aos="fade-up"
+							>
 								<span className="text-7xl font-medium">
 									O<span className="text-primary-light">UR</span> <br />{" "}
 								</span>
 								ASCEND
 								<span className="text-primary-light">ANCE</span>
 							</h1>
-							<p className="text-sm mt-6 text-justify w-full sm:max-w-lg">
+							<p
+								className="text-sm mt-6 text-justify w-full sm:max-w-lg"
+								data-aos="fade-left"
+							>
 								<b className="text-primary-light">JCX Developments Ltd</b>{" "}
 								embarked on the Real Estate journey with the commitment to bring
 								contemporary design and develop large-scale{" "}
@@ -116,7 +133,10 @@ export default function Home() {
 								<b className="text-primary-light">Condominium</b> projects in
 								Bangladesh with Japanese collaboration and experience.
 							</p>
-							<p className="text-sm mt-3 text-justify w-full sm:max-w-lg">
+							<p
+								className="text-sm mt-3 text-justify w-full sm:max-w-lg"
+								data-aos="fade-left"
+							>
 								We will strive to deliver precise, exquisite solutions to our
 								client&apos;s wishes and requirements so that their aspirations
 								become a reality. This will be accomplished by introducing
