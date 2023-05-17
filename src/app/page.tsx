@@ -8,7 +8,7 @@ export default function Home() {
 		<main className="bg-background text-slate-300">
 			{/* Hero Section */}
 			<div className="mx-auto bg-[url(/bg.jpg)] object-cover bg-center">
-				<div className="min-h-[85vh] w-full bg-gradient-to-b from-transparent to-background-light to-80% flex flex-col items-center justify-center py-5">
+				<div className="min-h-[75vh] w-full bg-gradient-to-b from-transparent to-background-light to-70% flex flex-col items-center justify-center py-5">
 					<div className="flex flex-col items-center">
 						<p className="text-2xl font-bold font-serif text-center text-slate-300 mb-1">
 							DISCOVER
@@ -34,16 +34,16 @@ export default function Home() {
 					</div> */}
 				</div>
 			</div>
-			<div className="bg-background-light min-h-screen">
-				<div className="max-w-6xl mx-auto flex flex-col gap-6 sm:flex-row justify-between px-5 sm:px-12">
-					<div>
-						<h1 className="scale-100 font-serif text-4xl tracking-wide leading-snug uppercase">
-							Top <span className="text-primary-light">Rated</span> <br />{" "}
-							<span className="text-5xl font-medium">
-								Wo<span className="text-primary-light">rks</span>
-							</span>
-						</h1>
-						<div className="py-4 px-3 w-full sm:max-w-md flex flex-col gap-2">
+			<div className="bg-background-light min-h-[200vh]">
+				<div className="max-w-6xl mx-auto px-5 sm:px-12">
+					<h1 className="text-center md:text-left scale-100 font-serif text-4xl tracking-wide leading-snug uppercase">
+						Top <span className="text-primary-light">Rated</span> <br />{" "}
+						<span className="text-5xl font-medium">
+							Wo<span className="text-primary-light">rks</span>
+						</span>
+					</h1>
+					<div className="flex flex-col-reverse gap-6 md:flex-row justify-between flex-1">
+						<div className="py-4 px-3 md:max-w-md flex flex-col gap-2">
 							<h4 className="font-bold text-xl">MM Villa</h4>
 							<p className="text-xs font-semibold">Basundhara R/A, Dhaka</p>
 							<p className="text-xs font-semibold">1500 Sq. Ft.</p>
@@ -68,18 +68,19 @@ export default function Home() {
 								</button>
 							</div>
 						</div>
-					</div>
-					<div className="flex-1 flex flex-row justify-center sm:justify-end">
-						<div className="border-4 border-slate-600 hover:border-slate-200 transition-colors duration-300 p-3 rounded-t-full mt-0 sm:-mt-24">
-							<Image
-								src={
-									"https://jcxbd.com/wp-content/uploads/2021/09/Featured-Projects-MM-Villa.jpg"
-								}
-								height={550}
-								width={350}
-								alt="JCX - MM Villa"
-								className="w-full max-w-md z-[1] relative rounded-t-full"
-							/>
+						<div className="flex-1 flex flex-row justify-center md:justify-end">
+							<div className=" w-fit h-fit border-4 border-slate-600 hover:border-slate-200 transition-colors duration-300 p-3 rounded-t-full mt-10 md:-mt-[40%]">
+								<Image
+									src={
+										"https://jcxbd.com/wp-content/uploads/2021/09/Featured-Projects-MM-Villa.jpg"
+									}
+									height={550}
+									width={350}
+									priority
+									alt="JCX - MM Villa"
+									className="w-full min-w-[340px] max-w-md z-[1] relative rounded-t-full"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
