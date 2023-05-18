@@ -141,9 +141,9 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="flex flex-col items-center lg:items-end justify-center">
+						<div className="flex flex-col items-center lg:items-start justify-center">
 							<h1
-								className="text-center lg:text-right scale-100 font-serif text-4xl tracking-wide leading-snug uppercase"
+								className="text-center lg:text-left scale-100 font-serif text-4xl tracking-wide leading-snug uppercase"
 								data-aos="fade-up"
 							>
 								<span className="text-7xl font-medium">
