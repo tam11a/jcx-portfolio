@@ -117,7 +117,7 @@ export default function Home() {
 									fill
 									alt={"Ascendance of JCX - 1"}
 									className="rounded-md"
-									data-aos="fade-right"
+									data-aos="fade-up"
 								/>
 							</div>
 							<div className=" grid grid-cols-2 gap-4">
@@ -136,7 +136,7 @@ export default function Home() {
 										fill
 										alt={"Ascendance of JCX - 1"}
 										className="rounded-md"
-										data-aos="fade-right"
+										data-aos="fade-left"
 									/>
 								</div>
 							</div>
