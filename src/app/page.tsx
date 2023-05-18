@@ -16,7 +16,7 @@ export default function Home() {
 						<p className="text-2xl font-bold font-serif text-center text-slate-300 mb-1">
 							DISCOVER
 						</p>
-						<p className="text-5xl sm:text-6xl font-serif text-center text-primary-light mb-3">
+						<p className="text-5xl sm:text-6xl font-serif text-center text-primary-light mb-3 font-medium">
 							PERFECTION
 						</p>
 						<p className="text-2xl font-serif font-bold text-center text-slate-200 max-w-md">
