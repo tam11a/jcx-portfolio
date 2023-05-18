@@ -1,5 +1,6 @@
 "use client";
 
+import { InlineIcon } from "@iconify/react";
 import Image from "next/image";
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
 							IN EVERY DETAILS
 						</p>
 						<div className="mt-7 border-2 p-1 rounded-full border-slate-600 hover:border-slate-200 transition-colors duration-300">
-							<button className="tracking-widest bg-primary-light px-5 py-3 rounded-full text-background font-bold uppercase">
+							<button className="tracking-widest bg-gradient-to-tr from-primary to-primary-light px-5 py-3 rounded-full text-background-light font-bold uppercase">
 								Explore
 							</button>
 						</div>
@@ -108,11 +109,41 @@ export default function Home() {
 			</div>
 			<div className="bg-gradient-to-b from-slate-900 to-background-light min-h-[40vh] pb-10">
 				<div className="max-w-6xl mx-auto px-5 sm:px-12 py-8">
-					<div className="flex flex-col-reverse sm:flex-row justify-between gap-4">
-						<div className="flex-1"></div>
-						<div className="flex-1 flex flex-col items-center sm:items-end justify-start">
+					<div className="flex flex-col-reverse lg:flex-row justify-between gap-8 min-h-[50vh]">
+						<div className="flex-1 relative grid gap-4">
+							<div className="relative min-h-[300px]">
+								<Image
+									src={`/ascendance/1.jpg`}
+									fill
+									alt={"Ascendance of JCX - 1"}
+									className="rounded-md"
+									data-aos="fade-right"
+								/>
+							</div>
+							<div className=" grid grid-cols-2 gap-4">
+								<div className="relative min-h-[250px]">
+									<Image
+										src={`/ascendance/2.jpg`}
+										fill
+										alt={"Ascendance of JCX - 1"}
+										className="rounded-md"
+										data-aos="fade-right"
+									/>
+								</div>
+								<div className="relative min-h-[250px]">
+									<Image
+										src={`/ascendance/3.jpg`}
+										fill
+										alt={"Ascendance of JCX - 1"}
+										className="rounded-md"
+										data-aos="fade-right"
+									/>
+								</div>
+							</div>
+						</div>
+						<div className="flex flex-col items-center lg:items-end justify-center">
 							<h1
-								className="text-center md:text-right scale-100 font-serif text-4xl tracking-wide leading-snug uppercase"
+								className="text-center lg:text-right scale-100 font-serif text-4xl tracking-wide leading-snug uppercase"
 								data-aos="fade-up"
 							>
 								<span className="text-7xl font-medium">
@@ -122,7 +153,7 @@ export default function Home() {
 								<span className="text-primary-light">ANCE</span>
 							</h1>
 							<p
-								className="text-sm mt-6 text-justify w-full sm:max-w-lg"
+								className="text-sm mt-6 mx-auto lg:mx-0 text-center lg:text-justify w-full sm:max-w-lg"
 								data-aos="fade-left"
 							>
 								<b className="text-primary-light">JCX Developments Ltd</b>{" "}
@@ -134,7 +165,7 @@ export default function Home() {
 								Bangladesh with Japanese collaboration and experience.
 							</p>
 							<p
-								className="text-sm mt-3 text-justify w-full sm:max-w-lg"
+								className="text-sm mt-3 mx-auto lg:mx-0 text-center lg:text-justify w-full sm:max-w-lg"
 								data-aos="fade-left"
 							>
 								We will strive to deliver precise, exquisite solutions to our
@@ -143,6 +174,16 @@ export default function Home() {
 								state-of-the-art innovative Japanese technologies with the
 								partnership with Creed Group from Japan.
 							</p>
+							<div
+								className="w-full mt-7"
+								data-aos="fade-left"
+							>
+								<div className="mx-auto lg:mx-0 border-2 p-1 rounded-full border-slate-600 hover:border-slate-200 transition-colors duration-300 w-fit">
+									<button className="tracking-widest bg-gradient-to-br from-primary-light to-primary px-5 py-3 rounded-full text-background-light font-bold uppercase">
+										About JCX
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
